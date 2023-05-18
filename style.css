@@ -69,7 +69,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid #e0e0e0;
+  border: 3px solid var(--line-border-empty);
   transition: 0.4s ease;
 }
 
@@ -96,4 +96,9 @@ body {
 /* removing outline is actually a bad idea because it helps people who use keyboard to navigate */
 btn:focus {
   outline: none;
+}
+
+.btn:disabled {
+  background-color: var(--line-border-empty);
+  cursor: not-allowed;
 }
