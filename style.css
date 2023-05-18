@@ -73,5 +73,26 @@ body {
 }
 
 .circle.active {
-  border-color: #3498db;
+  border-color: var(--line-border-fill);
+}
+
+.btn {
+  background: var(--line-border-fill);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  margin: 5px;
+  font-size: 14px;
+}
+/* this is the clicking effect */
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* removing outline is actually a bad idea because it helps people who use keyboard to navigate */
+btn:focus {
+  outline: none;
 }
